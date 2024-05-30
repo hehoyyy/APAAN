@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+    
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f6f7;
+  }
+  
+  .header {
+    font-family: "Sofia", cursive;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: deeppink;
+    color: white;
+    border-bottom: 4px solid rgb(165, 42, 42);
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    overflow: hidden;
+    
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
